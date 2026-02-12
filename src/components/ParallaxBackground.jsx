@@ -3,11 +3,12 @@ import React from 'react'
 
 const ParallaxBackground = () => {
     const {scrollYProgress} = useScroll()
-    const x = useSpring(scrollYProgress, { damping: 100 })
+    const x = useSpring(scrollYProgress, { damping: 50 })
     // when replace pictures, change the damping to 50 for more smooth effect
-    const bg2Y = useTransform(scrollYProgress, [0, 0.5], ["0%", "70%"])
-    const bg3Y = useTransform(scrollYProgress, [0, 0.5], ["0%", "30%"])
-    const bg4Y = useTransform(scrollYProgress, [0, 0.5], ["0%", "0%"])
+    const bg2Y = useTransform(x, [0, 0.5], ["0%", "70%"]);
+    const bg3Y = useTransform(x, [0, 0.5], ["0%", "-20%"]);
+    const bg4Y = useTransform(x, [0, 0.5], ["0%", "30%"]);
+    const bg5Y = useTransform(x, [0, 0.5], ["0%", "0%"]);
 
   return (
     <section className="absolute inset-0 bg-black/40">
@@ -16,7 +17,7 @@ const ParallaxBackground = () => {
             <div
             className='absolute inset-0 w-full h-screen -z-50'
             style={{
-                backgroundImage: 'url(/assets/bg_stars_4.png)',
+                backgroundImage: 'url(/assets/city/1.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'bottom',
             }}
@@ -25,7 +26,7 @@ const ParallaxBackground = () => {
             <motion.div
             className='absolute inset-0 w-full h-screen -z-40'
             style={{
-                backgroundImage: 'url(/assets/bg_stars_3.png)',
+                backgroundImage: 'url(/assets/city/2.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'bottom',
                 y: bg2Y
@@ -35,7 +36,7 @@ const ParallaxBackground = () => {
             <motion.div
             className='absolute inset-0 w-full h-screen -z-30'
             style={{
-                backgroundImage: 'url(/assets/bg_stars_2.png)',
+                backgroundImage: 'url(/assets/city/3.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'bottom',
                 y: bg3Y,
@@ -45,13 +46,23 @@ const ParallaxBackground = () => {
             <motion.div
             className='absolute inset-0 w-full h-screen -z-20'
             style={{
-                backgroundImage: 'url(/assets/bg_stars_1.png)',
+                backgroundImage: 'url(/assets/city/4.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'bottom',
                 y: bg4Y,
             }}
             />
-            
+            {/* Background Layer 5*/}
+            <motion.div
+            className='absolute inset-0 w-full h-screen -z-20'
+            style={{
+                backgroundImage: 'url(/assets/city/5.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'bottom',
+                y: bg5Y,
+            }}
+            />
+
         </div>
     </section>
   )
