@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
+import { Frameworks } from "../components/Frameworks";
 
 const About = () => {
   const grid2Container = useRef(null);
@@ -92,7 +93,17 @@ const About = () => {
         </div>
       </div>
       {/* Grid 5  */}
-      <div className='grid-default-color grid-5'></div>
+      <div className="grid-default-color grid-5">
+        <div className="z-10 w-[50%]">
+          <p className="headText">Teck Stack</p>
+          <p className="subtext">
+            Proficient in a diverse range of modern frameworks and tools dedicated to building reliable, production-ready software.
+          </p>
+        </div>
+        <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
+          <Frameworks />
+        </div>
+      </div>
 
     </div>
   </section>
