@@ -1,5 +1,17 @@
 import { motion, AnimatePresence } from "motion/react";
+import { useState, useEffect } from "react";
+
 const Alert = ({ type, text }) => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const alertVarients = {
     hidden: { opacity: 0, y: 50, scale: 0.8 },
     visible: { opacity: 1, y: 0, scale: 1 },
@@ -7,7 +19,7 @@ const Alert = ({ type, text }) => {
   };
   return (
     <AnimatePresence>
-      <motion.div
+      {isVisible && <motion.div
         className="fixed z-50 flex items-center justify-center bottom-5 right-5"
         initial="hidden"
         animate="visible"
@@ -29,7 +41,7 @@ const Alert = ({ type, text }) => {
           </p>
           <p className="mr-2 text-left">{text}</p>
         </div>
-      </motion.div>
+      </motion.div>}
     </AnimatePresence>
   );
 };
