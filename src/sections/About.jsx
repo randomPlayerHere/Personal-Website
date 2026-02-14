@@ -54,22 +54,22 @@ const About = () => {
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
-              image="assets/logos/chatgpt.png"
+              image="assets/logos/purple_logos/chatgpt.png"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/python.png"
+              image="assets/logos/purple_logos/python.png"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/pytorch.png"
+              image="assets/logos/purple_logos/pytorch.png"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "30deg", top: "15%", left: "10%" }}
-              image="assets/logos/tensorflow.png"
+              image="assets/logos/purple_logos/tensorflow.png"
               containerRef={grid2Container}
             />
 
