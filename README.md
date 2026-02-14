@@ -6,7 +6,7 @@ A modern, cyberpunk-inspired portfolio showcasing AI/ML projects with an immersi
 
 Retro Terminal Night aesthetic featuring:
 - Terminal Green (#4ADE80) - Primary accent
-- Cyan/Aqua (#33c2cc) - Secondary accent
+- Lavender/Violet (#A78BFA) - Secondary accent
 - Deep Purple gradients - Backgrounds
 - Coral (#ea4884) - Call-to-action highlights
 
@@ -52,7 +52,7 @@ Update personal information in `/src/constants/index.js`
 Modify theme colors in `/src/index.css`:
 ```css
 --color-terminal: #4ADE80;
---color-aqua: #33c2cc;
+--color-lavender: #A78BFA;
 --color-coral: #ea4884;
 ```
 

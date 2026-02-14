@@ -20,7 +20,7 @@ const Project = ({
       >
         <div>
           <p className="text-2xl text-text">{title}</p>
-          <div className="flex gap-5 mt-2 text-aqua">
+          <div className="flex gap-5 mt-2 text-lavender">
             {tags.map((tag) => (
               <span key={tag.id} className="hover:text-terminal transition-colors">{tag.name}</span>
             ))}

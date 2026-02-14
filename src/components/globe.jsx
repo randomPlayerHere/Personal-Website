@@ -19,7 +19,7 @@ const GLOBE_CONFIG = {
   diffuse: 0.4,
   mapSamples: 16000,
   mapBrightness: 1.2,
-  baseColor: [0.2, 0.76, 0.8],      // Aqua theme color
+  baseColor: [0.65, 0.55, 0.98],    // Lavender theme color
   markerColor: [0.29, 0.87, 0.5],   // Terminal green
   glowColor: [0.12, 0.12, 0.22],    // Indigo background
   markers: [

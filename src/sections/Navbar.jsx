@@ -27,7 +27,7 @@ const Navbar = () => {
                 <a 
                 href = "#home"
                 className="text-xl font-bold transition-colors text-terminal hover:text-terminal-dim hover:drop-shadow-[0_0_10px_rgba(74,222,128,0.5)]">
-                    Khushal
+                    Khushal Nirwal
                 </a>
                 <button onClick={() => setIsOpen(!isOpen)} className="flex cursor-pointer text-text-muted hover:text-terminal focus:outline-none sm:hidden transition-colors">
                     <img src={isOpen? "og_assets/close.svg":"og_assets/menu.svg"} className="w-6 h-6" alt="toggle"/>

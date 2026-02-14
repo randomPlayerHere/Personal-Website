@@ -78,7 +78,7 @@ const About = () => {
       {/* Grid 3  */}
       <div className='grid-black-color grid-3'>
         <div className="z-10 w-[50%]">
-          <p className="headtext">Time <span className="text-aqua">Zone</span></p>
+          <p className="headtext">Time <span className="text-lavender">Zone</span></p>
           <p className="subtext">I'm based in Bhubaneswar, India, and open to remote work worldwide</p>
         </div>
         <figure className="absolute left-[30%] top-[10%]">
@@ -95,7 +95,7 @@ const About = () => {
       {/* Grid 5  */}
       <div className="grid-default-color grid-5">
         <div className="z-10 w-[50%]">
-          <p className="headtext">Tech <span className="text-aqua">Stack</span></p>
+          <p className="headtext">Tech <span className="text-lavender">Stack</span></p>
           <p className="subtext">
             Proficient in a diverse range of modern frameworks and tools dedicated to building reliable, production-ready software.
           </p>

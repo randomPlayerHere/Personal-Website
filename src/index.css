@@ -18,10 +18,10 @@
   --color-terminal-dim: #22C55E;
   --color-terminal-glow: rgba(74, 222, 128, 0.15);
   
-  /* Secondary accent - Cyan/Aqua (matches city window lights) */
-  --color-aqua: #33c2cc;
-  --color-aqua-dim: #0891B2;
-  --color-aqua-glow: rgba(51, 194, 204, 0.15);
+  /* Secondary accent - Lavender/Violet (complements purple backgrounds) */
+  --color-lavender: #A78BFA;
+  --color-lavender-dim: #8B5CF6;
+  --color-lavender-glow: rgba(167, 139, 250, 0.15);
   
   /* Warm accent for CTAs - Coral (for contrast without chaos) */
   --color-coral: #ea4884;
@@ -138,8 +138,8 @@ body {
   @apply px-6 py-3 bg-gradient-to-r from-coral to-coral-dim text-white rounded-lg cursor-pointer hover:shadow-[0_0_25px_rgba(234,72,132,0.4)] transition-all duration-300;
 }
 
-.btn-aqua {
-  @apply px-6 py-3 bg-aqua/20 border border-aqua/50 text-aqua rounded-lg cursor-pointer hover:bg-aqua/30 hover:border-aqua transition-all duration-300;
+.btn-lavender {
+  @apply px-6 py-3 bg-lavender/20 border border-lavender/50 text-lavender rounded-lg cursor-pointer hover:bg-lavender/30 hover:border-lavender transition-all duration-300;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -175,7 +175,7 @@ body {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   CONTACT SECTION - Aqua focus states
+   CONTACT SECTION - Lavender focus states
    ═══════════════════════════════════════════════════════════════ */
 
 .field-label {
@@ -187,7 +187,7 @@ body {
 }
 
 .field-input-focus {
-  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-aqua/50 focus-visible:border-aqua/50;
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender/50 focus-visible:border-lavender/50;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -198,8 +198,8 @@ body {
   @apply shadow-[0_0_20px_rgba(74,222,128,0.3)];
 }
 
-.glow-aqua {
-  @apply shadow-[0_0_20px_rgba(51,194,204,0.3)];
+.glow-lavender {
+  @apply shadow-[0_0_20px_rgba(167,139,250,0.3)];
 }
 
 .glow-coral {

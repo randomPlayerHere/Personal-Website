@@ -36,7 +36,7 @@ export const Timeline = ({ data }) => {
                 <div className="w-4 h-4 p-2 border rounded-full bg-terminal/20 border-terminal/50" />
               </div>
               <div className="flex-col hidden gap-2 text-xl font-bold md:flex md:pl-20 md:text-4xl text-text">
-                <h3 className="text-aqua">{item.date}</h3>
+                <h3 className="text-lavender">{item.date}</h3>
                 <h3 className="text-3xl text-text">{item.title}</h3>
                 <h3 className="text-3xl text-text-muted">{item.job}</h3>
               </div>
@@ -44,7 +44,7 @@ export const Timeline = ({ data }) => {
 
             <div className="relative w-full pl-20 pr-4 md:pl-4">
               <div className="block mb-4 text-2xl font-bold text-left text-text md:hidden ">
-                <h3 className="text-aqua">{item.date}</h3>
+                <h3 className="text-lavender">{item.date}</h3>
                 <h3>{item.job}</h3>
               </div>
               {item.contents.map((content, index) => (
@@ -66,7 +66,7 @@ export const Timeline = ({ data }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-terminal via-aqua/50 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-terminal via-lavender/50 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>
