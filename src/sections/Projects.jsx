@@ -14,11 +14,12 @@ const Projects = () => {
   const [preview, setPreview] = useState(null);
   return (
     <section
+      id="work"
       onMouseMove={handleMouseMove}
       className="relative c-space pt-28"
     >
-      <h2 className="text-heading">My Selected Projects</h2>
-      <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full" />
+      <h2 className="text-heading">My Selected <span className="text-terminal">Projects</span></h2>
+      <div className="divider-line mt-12" />
       {myProjects.map((project) => (
         <Project key={project.id} {...project} setPreview={setPreview} />
       ))}

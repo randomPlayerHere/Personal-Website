@@ -87,3 +87,22 @@ export const experiences = [
     ],
   },
 ];
+
+
+export const mySocials = [
+  {
+    name: "Github",
+    href: "https://github.com/randomPlayerHere",
+    icon: "/assets/socials/GitHub.svg",
+  },
+  {
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/khushalnirwal/",
+    icon: "/assets/socials/LinkedIn.svg",
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/khushalnirwal/",
+    icon: "/assets/socials/Instagram.svg",
+  },
+];

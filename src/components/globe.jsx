@@ -19,9 +19,9 @@ const GLOBE_CONFIG = {
   diffuse: 0.4,
   mapSamples: 16000,
   mapBrightness: 1.2,
-  baseColor: [1, 1, 1],
-  markerColor: [1, 1, 1],
-  glowColor: [1, 1, 1],
+  baseColor: [0.2, 0.76, 0.8],      // Aqua theme color
+  markerColor: [0.29, 0.87, 0.5],   // Terminal green
+  glowColor: [0.12, 0.12, 0.22],    // Indigo background
   markers: [
     { location: [14.5995, 120.9842], size: 0.03 },
     { location: [19.076, 72.8777], size: 0.1 },

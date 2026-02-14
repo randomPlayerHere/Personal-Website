@@ -19,22 +19,22 @@ const Project = ({
         onMouseLeave={() => setPreview(null)}
       >
         <div>
-          <p className="text-2xl">{title}</p>
+          <p className="text-2xl text-text">{title}</p>
           <div className="flex gap-5 mt-2 text-aqua">
             {tags.map((tag) => (
-              <span key={tag.id}>{tag.name}</span>
+              <span key={tag.id} className="hover:text-terminal transition-colors">{tag.name}</span>
             ))}
           </div>
         </div>
         <button
           onClick={() => setIsHidden(true)}
-          className="flex items-center gap-1 cursor-pointer hover-animation"
+          className="flex items-center gap-1 cursor-pointer text-terminal hover:text-terminal-dim hover-animation"
         >
           Read More
           <img src="og_assets/arrow-right.svg" className="w-5" />
         </button>
       </div>
-      <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
+      <div className="divider-line" />
       {isHidden && (
         <ProjectDetails
           title={title}

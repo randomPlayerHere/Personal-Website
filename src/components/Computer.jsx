@@ -27,8 +27,8 @@ export function Computer(props) {
       // Get mouse position (-1 to 1 range)
       const { x, y } = state.pointer
       // Smoothly rotate model toward cursor (base rotation + mouse offset)
-      group.current.rotation.y += (((Math.PI -0.1) / 2 + x * 0.3) - group.current.rotation.y) * 0.1
-      group.current.rotation.x += (y * 0.05 - group.current.rotation.x) * 0.1
+      group.current.rotation.y += (((Math.PI -0.1) / 2 + x * 0.15) - group.current.rotation.y) * 0.1
+      group.current.rotation.x += (y * 0.01 - group.current.rotation.x) * 0.1
     }
   })
 

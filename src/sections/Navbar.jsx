@@ -21,15 +21,15 @@ function Navigation(){
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className='fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40'>
+    <div className='fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/60 border-b border-white/5'>
         <div className="mx-auto c-space max-w-7xl">
             <div className="flex items-center justify-between py-2 sm:py-0">
                 <a 
-                href = "https://www.google.com/"
-                className="text-xl font-bold transition-colors text-neutral-400 hover:text-terminal">
+                href = "#home"
+                className="text-xl font-bold transition-colors text-terminal hover:text-terminal-dim hover:drop-shadow-[0_0_10px_rgba(74,222,128,0.5)]">
                     Khushal
                 </a>
-                <button onClick={() => setIsOpen(!isOpen)} className="flex cursor-pointer text-neutral-400 hover:text-terminal focus:outline-none sm:hidden">
+                <button onClick={() => setIsOpen(!isOpen)} className="flex cursor-pointer text-text-muted hover:text-terminal focus:outline-none sm:hidden transition-colors">
                     <img src={isOpen? "og_assets/close.svg":"og_assets/menu.svg"} className="w-6 h-6" alt="toggle"/>
                 </button>
                 <nav className="hidden sm:flex">
