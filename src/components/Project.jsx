@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ProjectDetails from "./ProjectDetails";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const Project = ({
   title,
   description,
@@ -31,7 +33,7 @@ const Project = ({
           className="flex items-center gap-1 cursor-pointer text-terminal hover:text-terminal-dim hover-animation"
         >
           Read More
-          <img src="og_assets/arrow-right.svg" className="w-5" />
+          <img src={`${BASE_URL}og_assets/arrow-right.svg`} className="w-5" />
         </button>
       </div>
       <div className="divider-line" />

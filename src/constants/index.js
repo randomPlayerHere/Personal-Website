@@ -1,3 +1,5 @@
+const BASE_URL = import.meta.env.BASE_URL;
+
 export const myProjects = [
   {
     id: 1,
@@ -11,11 +13,11 @@ export const myProjects = [
     ],
     href: "https://github.com/randomPlayerHere/nids",
     logo: "",
-    image: "/assets/projects/nids.png",
+    image: `${BASE_URL}assets/projects/nids.png`,
     tags: [
-      { id: 1, name: "Python", path: "/assets/logos/Python.svg" },
-      { id: 2, name: "TensorFlow", path: "/assets/logos/TensorFlow.svg" },
-      { id: 3, name: "scikit-learn", path: "/assets/logos/scikit-learn.svg" },
+      { id: 1, name: "Python", path: `${BASE_URL}assets/logos/Python.svg` },
+      { id: 2, name: "TensorFlow", path: `${BASE_URL}assets/logos/TensorFlow.svg` },
+      { id: 3, name: "scikit-learn", path: `${BASE_URL}assets/logos/scikit-learn.svg` },
     ],
   },
   {
@@ -31,12 +33,12 @@ export const myProjects = [
     ],
     href: "https://github.com/randomPlayerHere/backtestSMA",
     logo: "",
-    image: "/assets/projects/trading.png",
+    image: `${BASE_URL}assets/projects/trading.png`,
     tags: [
-      { id: 1, name: "Python", path: "/assets/logos/Python.svg" },
-      { id: 2, name: "pandas", path: "/assets/logos/Pandas.svg" },
-      { id: 3, name: "Matplotlib", path: "/assets/logos/Matplotlib.svg" },
-      { id: 4, name: "Streamlit", path: "/assets/logos/Streamlit.svg" },
+      { id: 1, name: "Python", path: `${BASE_URL}assets/logos/Python.svg` },
+      { id: 2, name: "pandas", path: `${BASE_URL}assets/logos/Pandas.svg` },
+      { id: 3, name: "Matplotlib", path: `${BASE_URL}assets/logos/Matplotlib.svg` },
+      { id: 4, name: "Streamlit", path: `${BASE_URL}assets/logos/Streamlit.svg` },
     ],
   },
   {
@@ -52,11 +54,11 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/hyprfit.jpeg",
+    image: `${BASE_URL}assets/projects/hyprfit.jpeg`,
     tags: [
-      { id: 1, name: "Python", path: "/assets/logos/Python.svg" },
-      { id: 2, name: "scikit-learn", path: "/assets/logos/scikit-learn.svg" },
-      { id: 4, name: "Streamlit", path: "/assets/logos/Streamlit.svg" }
+      { id: 1, name: "Python", path: `${BASE_URL}assets/logos/Python.svg` },
+      { id: 2, name: "scikit-learn", path: `${BASE_URL}assets/logos/scikit-learn.svg` },
+      { id: 4, name: "Streamlit", path: `${BASE_URL}assets/logos/Streamlit.svg` }
     ],
   }
 ];
@@ -93,16 +95,16 @@ export const mySocials = [
   {
     name: "Github",
     href: "https://github.com/randomPlayerHere",
-    icon: "/assets/socials/GitHub.svg",
+    icon: `${BASE_URL}assets/socials/GitHub.svg`,
   },
   {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/khushalnirwal/",
-    icon: "/assets/socials/LinkedIn.svg",
+    icon: `${BASE_URL}assets/socials/LinkedIn.svg`,
   },
   {
     name: "Instagram",
     href: "https://www.instagram.com/khushalnirwal/",
-    icon: "/assets/socials/Instagram.svg",
+    icon: `${BASE_URL}assets/socials/Instagram.svg`,
   },
 ];

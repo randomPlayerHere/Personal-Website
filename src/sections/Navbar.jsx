@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import { motion } from "motion/react"
+
+const BASE_URL = import.meta.env.BASE_URL;
+
 function Navigation(){
     return(
         <ul className='nav-ul'>
@@ -30,7 +33,7 @@ const Navbar = () => {
                     Khushal Nirwal
                 </a>
                 <button onClick={() => setIsOpen(!isOpen)} className="flex cursor-pointer text-text-muted hover:text-terminal focus:outline-none sm:hidden transition-colors">
-                    <img src={isOpen? "og_assets/close.svg":"og_assets/menu.svg"} className="w-6 h-6" alt="toggle"/>
+                    <img src={isOpen? `${BASE_URL}og_assets/close.svg`:`${BASE_URL}og_assets/menu.svg`} className="w-6 h-6" alt="toggle"/>
                 </button>
                 <nav className="hidden sm:flex">
                     <Navigation/>

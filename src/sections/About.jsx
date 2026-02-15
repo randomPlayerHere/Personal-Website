@@ -4,6 +4,8 @@ import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const About = () => {
   const grid2Container = useRef();
   return <section id="about" className='c-space section-spacing'>
@@ -13,7 +15,7 @@ const About = () => {
     <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
       {/* Grid-1 */}
       <div className='grid-1 grid-default-color flex items-end'>
-        <img src="og_assets/coding-pov.png" className='absolute scale-[0.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]'/>
+        <img src={`${BASE_URL}og_assets/coding-pov.png`} className='absolute scale-[0.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]'/>
         <div className='z-10'>
           <p className='headtext'>Hi, I'm Khushal Nirwal</p>
           <p className='subtext'>

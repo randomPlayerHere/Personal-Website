@@ -1,4 +1,7 @@
 import { motion } from "motion/react";
+
+const BASE_URL = import.meta.env.BASE_URL;
+
 const ProjectDetails = ({
   title,
   description,
@@ -19,7 +22,7 @@ const ProjectDetails = ({
           onClick={closeModal}
           className="absolute p-2 rounded-lg top-5 right-5 bg-indigo hover:bg-storm border border-white/10 hover:border-coral/50 transition-all"
         >
-          <img src="og_assets/close.svg" className="w-6 h-6" />
+          <img src={`${BASE_URL}og_assets/close.svg`} className="w-6 h-6" />
         </button>
         <img src={image} alt={title} className="w-full rounded-t-2xl" />
         <div className="p-6">
@@ -46,7 +49,7 @@ const ProjectDetails = ({
               className="inline-flex items-center gap-1 font-medium cursor-pointer text-terminal hover:text-terminal-dim hover-animation"
             >
               View Project{" "}
-              <img src="og_assets/arrow-up.svg" className="size-4" />
+              <img src={`${BASE_URL}og_assets/arrow-up.svg`} className="size-4" />
             </a>
           </div>
         </div>

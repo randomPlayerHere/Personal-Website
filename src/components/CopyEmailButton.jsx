@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+
+const BASE_URL = import.meta.env.BASE_URL;
+
 const CopyEmailButton = () => {
   const [copied, setCopied] = useState(false);
   const email = "khushalnirwal@gmail.com";
@@ -29,7 +32,7 @@ const CopyEmailButton = () => {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.1, ease: "easeInOut" }}
           >
-            <img src="og_assets/copy-done.svg" className="w-5" alt="copy Icon" />
+            <img src={`${BASE_URL}og_assets/copy-done.svg`} className="w-5" alt="copy Icon" />
             Email has been copied
           </motion.p>
         ) : (
@@ -41,7 +44,7 @@ const CopyEmailButton = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.1 }}
           >
-            <img src="og_assets/copy.svg" className="w-5" alt="copy icon" />
+            <img src={`${BASE_URL}og_assets/copy.svg`} className="w-5" alt="copy icon" />
             Copy Email Address
           </motion.p>
         )}

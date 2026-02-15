@@ -1,6 +1,8 @@
 import { motion, useTransform, useScroll, useSpring } from 'motion/react'
 import React from 'react'
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const ParallaxBackground = () => {
     const {scrollYProgress} = useScroll()
     const x = useSpring(scrollYProgress, { damping: 50 })
@@ -17,7 +19,7 @@ const ParallaxBackground = () => {
             <div
             className='absolute inset-0 w-full h-screen -z-50'
             style={{
-                backgroundImage: 'url(/assets/city/1.png)',
+                backgroundImage: `url(${BASE_URL}assets/city/1.png)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'bottom',
             }}
@@ -26,7 +28,7 @@ const ParallaxBackground = () => {
             <motion.div
             className='absolute inset-0 w-full h-screen -z-40'
             style={{
-                backgroundImage: 'url(/assets/city/2.png)',
+                backgroundImage: `url(${BASE_URL}assets/city/2.png)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'bottom',
                 y: bg2Y
@@ -36,7 +38,7 @@ const ParallaxBackground = () => {
             <motion.div
             className='absolute inset-0 w-full h-screen -z-30'
             style={{
-                backgroundImage: 'url(/assets/city/3.png)',
+                backgroundImage: `url(${BASE_URL}assets/city/3.png)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'bottom',
                 y: bg3Y,
@@ -46,7 +48,7 @@ const ParallaxBackground = () => {
             <motion.div
             className='absolute inset-0 w-full h-screen -z-20'
             style={{
-                backgroundImage: 'url(/assets/city/4.png)',
+                backgroundImage: `url(${BASE_URL}assets/city/4.png)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'bottom',
                 y: bg4Y,
@@ -56,7 +58,7 @@ const ParallaxBackground = () => {
             <motion.div
             className='absolute inset-0 w-full h-screen -z-20'
             style={{
-                backgroundImage: 'url(/assets/city/5.png)',
+                backgroundImage: `url(${BASE_URL}assets/city/5.png)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'bottom',
                 y: bg5Y,
